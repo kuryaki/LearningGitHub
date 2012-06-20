@@ -91,4 +91,37 @@ Todos los commits que se realizen estando trabajando en una rama quedan en la ra
 cambiar entre ramas sin que los cambios realizados en una u otra se vean reflejados antes 
 de hacer una mezcla (*ver adelante*)
 
+## merge
+
+Luego de tener los cambios en una rama y estar seguros de estos hay que realizar una mezcla
+existen diferentes estrategias para mezclar ej.
+    
+    branch->master
+    master->branch
+    branch->branch
+    (branch<->branch)->branch
+
+El commando __git merge__ nos permite hacer todo este tipo de mezclas, sin embargo solo vamos a
+ver la mas basica, luego de realizar los cambios en nuestra rama:
+
+    $ git checkout master                # pasamos al master
+    $ git merge <nombreRama>             # mezclamos la rama en nuestro master
+
+Si existen conflictos git nos mostrara los archivos donde se presentaron para que sean resueltos
+manualmente
+
+## tag / show
+
+Cuando estamos seguros de una version de nuestro codigo y queremos marcarla como segura / estable
+podemos crear un tag con __git tag <nombre del tag>__ para que quede una copia del repositorio
+en ese momento, para listar los tags lo hacemos con __git tag -l__ y para ver especificamente que 
+tiene un tag lo hacemos con __git show <nombre del tag>__
+
+## .gitignore
+
+Algunos archivos no queremos que sean controlados o guardar copias de estos en el repositorio
+por ejemplo .class / .pyc / .py~ etc, para esto creamos un archivo .gitignore que contiene
+mediante expresiones regulares los archivos y tipos de archivos que no queremos controlar
+
+
 
