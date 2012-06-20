@@ -45,7 +45,24 @@ Permite visualizar si hay archivos que tienen ambios que pendientes de hacer com
 
 ## Diff
 
-El commando __diff__ permite ver a detalle cuales son los cambios que estan
+El commando __git diff__ permite ver a detalle cuales son los cambios que estan
 pendientes, con *--* muestra los archivos como se encuentran en el repositorio 
 y con *++* los archivos como estan actualmente
-    
+
+## Checkout
+
+Con el commando __git checkout <nombreArchivo/Ficher>__ reemplazo mis cambios
+locales por los cambios que se encuentran en el repositorio, adicionalmente me
+permite cambiar entre ramas (*ver adelante*)
+
+## Log
+
+__git log__ muestra el log de los commits que se han realizado, incluyendo el mensaje,
+el autor, y la fecha
+
+# rm / mv
+
+Con __git rm__ o __git mv__ se pueden eliminar o mover archivos o ficheros que se encuentran
+en el repositorio
+
+  
