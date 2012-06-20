@@ -1,3 +1,5 @@
+# GIT 101
+
 ## Init
 
 Primero inicializar el repositorio con __git init <nombreRepositorio>__
@@ -65,4 +67,21 @@ el autor, y la fecha
 Con __git rm__ o __git mv__ se pueden eliminar o mover archivos o ficheros que se encuentran
 en el repositorio
 
-  
+# GIT 201
+
+## branch
+
+Una rama es un nuevo camino del codigo que debe ser manejado pero que no esta listo para
+ser incluido en el *master* del repositorio, ej. nuevas funcionalidades
+
+__git branch__ sin argumentos lista la ramas disponibles
+__git branch <nombreRama>__ crea una rama para trabajar
+__git branch checkout <nombreRama>__ cambia la rama de trabajo a la rama seleccionada
+__git branch checkout master__ vuelve a la rama principal (trunk?)
+__git branch -D <nombreRama>__ elimina la rama
+
+Todos los commits que se realizen estando trabajando en una rama quedan en la rama y se puede
+cambiar entre ramas sin que los cambios realizados en una u otra se vean reflejados antes 
+de hacer una mezcla (*ver adelante*)
+
+
