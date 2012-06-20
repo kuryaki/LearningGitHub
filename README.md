@@ -8,15 +8,21 @@ tambien se puede inicializar una carpeta ya existente ej
     $ cd nombreRepositorio
     nombreRepositorio/$ git init
 
-## Conf
+## Config
 
-Para poder ver que configuraciones tenemos usamos __git conf__
+Para poder ver que configuraciones tenemos usamos __git config__
 ej. el editor de commits o el nombre de usuario
 
     $ cd nombreRepositorio
-    nombreRepositorio/$ git conf -l
+    nombreRepositorio/$ git config -l
 
 -l lista todas las configuraciones
+
+    $ git config --global user.name "Su Nombre"
+    $ git config --global user.email "Su Correo"
+    $ git config --global core.editor "Su Editor ej. notepad"
+
+Esto se hace para configurar la instalacion/repositorio
 
 ## Add
 
