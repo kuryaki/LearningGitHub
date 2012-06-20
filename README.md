@@ -74,7 +74,8 @@ en el repositorio
 Una rama es un nuevo camino del codigo que debe ser manejado pero que no esta listo para
 ser incluido en el *master* del repositorio, ej. nuevas funcionalidades
 
-__git branch__ sin argumentos lista la ramas disponibles
+__git branch__ sin argumentos lista la ramas disponibles y con un asterisco la actual 
+__git branch -v__ Lista las ramas y muestra el ultimo commit en cada una 
 __git branch <nombreRama>__ crea una rama para trabajar
 __git branch checkout <nombreRama>__ cambia la rama de trabajo a la rama seleccionada
 __git branch checkout master__ vuelve a la rama principal (trunk?)
