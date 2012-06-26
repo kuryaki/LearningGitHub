@@ -78,7 +78,9 @@ en el repositorio
 ## branch
 
 Una rama es un nuevo camino del codigo que debe ser manejado pero que no esta listo para
-ser incluido en el *master* del repositorio, ej. nuevas funcionalidades
+ser incluido en el *master* del repositorio, (la rama master es la rama por defecto en git) 
+
+las ramas se usan por ejemplo para manejar nuevas funcionalidades
 
 __git branch__ sin argumentos lista la ramas disponibles y con un asterisco la actual 
 __git branch -v__ Lista las ramas y muestra el ultimo commit en cada una 
@@ -129,6 +131,37 @@ mediante expresiones regulares los archivos y tipos de archivos que no queremos 
 
 Un repositorio de git esta listo para ser compartido desde el primero momento, para hacer una
 copia de un repositorio se debe usar __git clone <ubicacion del repo>__
+
+## SSH Keys
+
+Antes de poder compartir nuestro codigo o colaborar con otros repositorios debemos identificarnos
+de una forma que garantize nuestra autenticidad, para esto se usa la generacion de llaves SSH
+
+    $ ssh-keygen
+
+Esto nos genera una llave publica y una llave privada, debemos entregarle la llave publica a la 
+persona que queremos que confie en nuestro codigo (ej. github)
+
+## remote
+
+Para poder conectarnos con un repositorio fuera del que tenemos tenemos tenemos que agregar un 
+repositorio remoto con el commando __git remote add <nombre remoto> <ubicacion del repo>__ se
+puede usar __git remote rm <nombre remoto>__ para borrarlo
+
+## push
+
+Luego de estar conectados a un repositorio podemos _empujar_ al repositorio remoto los cambios
+que tenemos en nuestro repositorio local mediante __git push <nombre remoto> <nombre rama>__
+por defecto git intenta empujar al remoto origin y a la rama master
+
+## pull y fetch
+
+Al igual que podemos empujar nuestros cambios a un repositorio remoto podemos jalar cambios de
+un repositorio remoto a nuestro repositorio local bien sea a nuestro carpeta de trabajo (pull) 
+o a la copia de nuestro repositorio (fetch) usando los comandos
+
+__git pull <nombre remoto> <nombre rama>__
+__git fetch <nombre remoto> <nombre rama>__
 
 ## Fork?
 
