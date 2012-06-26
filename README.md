@@ -1,3 +1,12 @@
+Este tutorial fue hecho para campus party 2012 Bogota, estan libres de copiarlo y usarlo
+
+esta acompañado de slides si quieren:
+
+Verlas: http://bit.ly/gitCOP5
+
+Copiarlas o Editarlas: http://bit.ly/github-COP5-edit 
+
+
 # GIT 101 - Conceptos Basicos
 
 ## Init
