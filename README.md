@@ -1,4 +1,4 @@
-# GIT 101
+# GIT 101 - Conceptos Basicos
 
 ## Init
 
@@ -73,7 +73,7 @@ el autor, y la fecha
 Con __git rm__ o __git mv__ se pueden eliminar o mover archivos o ficheros que se encuentran
 en el repositorio
 
-# GIT 201
+# GIT 201 - Ramas y Mezclas
 
 ## branch
 
@@ -117,11 +117,21 @@ podemos crear un tag con __git tag <nombre del tag>__ para que quede una copia d
 en ese momento, para listar los tags lo hacemos con __git tag -l__ y para ver especificamente que 
 tiene un tag lo hacemos con __git show <nombre del tag>__
 
+# GIT 301 - Compartiendo el codigo
+
 ## .gitignore
 
 Algunos archivos no queremos que sean controlados o guardar copias de estos en el repositorio
 por ejemplo .class / .pyc / .py~ etc, para esto creamos un archivo .gitignore que contiene
 mediante expresiones regulares los archivos y tipos de archivos que no queremos controlar
 
+## clone
 
+Un repositorio de git esta listo para ser compartido desde el primero momento, para hacer una
+copia de un repositorio se debe usar __git clone <ubicacion del repo>__
 
+## Fork?
+
+Un fork no es un concepto de Git, es mas una conveniencia social, donde se hace el clone de un 
+repositorio bajo un nombre propio, como git genera una copia del repositorio a traves de un
+clone, podemos trabajarlo como un
